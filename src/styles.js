@@ -1,0 +1,257 @@
+// Centralized styles object for the invoice application
+export const styles = {
+  container: {
+    minHeight: '100vh',
+    backgroundColor: '#f3f4f6',
+    padding: '2rem 1rem',
+    fontFamily: 'sans-serif',
+  },
+  wrapper: {
+    maxWidth: '1200px',
+    margin: '0 auto',
+  },
+  header: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: '2rem',
+    gap: '1rem',
+  },
+  title: {
+    fontSize: '2rem',
+    fontWeight: 'bold',
+    color: '#1f2937',
+    margin: '0',
+  },
+  buttonGroup: {
+    display: 'flex',
+    gap: '0.75rem',
+    flexWrap: 'wrap',
+  },
+  button: {
+    padding: '0.75rem 1.5rem',
+    backgroundColor: '#4f46e5',
+    color: 'white',
+    border: 'none',
+    borderRadius: '0.5rem',
+    cursor: 'pointer',
+    fontWeight: '600',
+    fontSize: '0.875rem',
+    transition: 'all 0.3s ease',
+  },
+  buttonSecondary: {
+    backgroundColor: '#6b7280',
+  },
+  buttonDanger: {
+    backgroundColor: '#ef4444',
+  },
+  buttonSmall: {
+    padding: '0.5rem 1rem',
+    fontSize: '0.75rem',
+  },
+  mainContent: {
+    display: 'grid',
+    gridTemplateColumns: '1fr 350px',
+    gap: '2rem',
+    marginBottom: '2rem',
+  },
+  invoice: {
+    backgroundColor: 'white',
+    boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
+    padding: '3rem',
+    position: 'relative',
+    color: '#1f2937',
+    borderRadius: '0.5rem',
+  },
+  sidebar: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1rem',
+  },
+  sidebarCard: {
+    backgroundColor: 'white',
+    padding: '1.5rem',
+    borderRadius: '0.5rem',
+    boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+  },
+  cardTitle: {
+    fontSize: '1rem',
+    fontWeight: 'bold',
+    color: '#111827',
+    margin: '0 0 1rem 0',
+  },
+  input: {
+    width: '100%',
+    padding: '0.5rem',
+    marginBottom: '0.75rem',
+    border: '1px solid #d1d5db',
+    borderRadius: '0.375rem',
+    fontSize: '0.875rem',
+    boxSizing: 'border-box',
+  },
+  label: {
+    display: 'block',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    color: '#6b7280',
+    marginBottom: '0.25rem',
+    textTransform: 'uppercase',
+    letterSpacing: '0.05em',
+  },
+  // Invoice section styles
+  invoiceHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    borderBottom: '2px solid #f3f4f6',
+    paddingBottom: '2rem',
+    marginBottom: '2rem',
+  },
+  invoiceTitle: {
+    fontSize: '2.25rem',
+    fontWeight: '900',
+    color: '#111827',
+    letterSpacing: '-0.02em',
+    margin: '0',
+  },
+  invoiceNumber: {
+    color: '#9ca3af',
+    marginTop: '0.25rem',
+    margin: '0.25rem 0 0 0',
+  },
+  company: {
+    fontWeight: 'bold',
+    fontSize: '1.25rem',
+    color: '#4f46e5',
+    margin: '0',
+  },
+  companyDetails: {
+    fontSize: '0.875rem',
+    color: '#9ca3af',
+    margin: '0.25rem 0',
+  },
+  billSection: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    marginBottom: '3rem',
+  },
+  billLabel: {
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    color: '#9ca3af',
+    textTransform: 'uppercase',
+    letterSpacing: '0.05em',
+    margin: '0 0 0.5rem 0',
+  },
+  billName: {
+    fontWeight: 'bold',
+    fontSize: '1.125rem',
+    margin: '0',
+  },
+  billDetail: {
+    color: '#9ca3af',
+    fontSize: '0.875rem',
+    margin: '0',
+  },
+  // Table styles
+  table: {
+    width: '100%',
+    marginBottom: '3rem',
+    borderCollapse: 'collapse',
+  },
+  thead: {
+    backgroundColor: '#f9fafb',
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    color: '#6b7280',
+    textTransform: 'uppercase',
+    letterSpacing: '0.05em',
+    borderTop: '1px solid #f3f4f6',
+    borderBottom: '1px solid #f3f4f6',
+  },
+  th: {
+    padding: '0.75rem 1rem',
+    textAlign: 'left',
+  },
+  thRight: {
+    textAlign: 'right',
+  },
+  thCenter: {
+    textAlign: 'center',
+  },
+  tr: {
+    borderBottom: '1px solid #f9fafb',
+    transition: 'background-color 0.2s ease',
+  },
+  trEdit: {
+    backgroundColor: '#fffbeb',
+  },
+  td: {
+    padding: '1rem',
+  },
+  tdCenter: {
+    textAlign: 'center',
+    color: '#9ca3af',
+  },
+  tdRight: {
+    textAlign: 'right',
+  },
+  tdRightBold: {
+    textAlign: 'right',
+    fontWeight: 'bold',
+    color: '#111827',
+  },
+  tdDesc: {
+    fontWeight: '500',
+    color: '#111827',
+  },
+  tdInput: {
+    padding: '0.5rem',
+    fontSize: '0.875rem',
+    border: '1px solid #d1d5db',
+    borderRadius: '0.375rem',
+    width: '100%',
+    boxSizing: 'border-box',
+  },
+  // Totals styles
+  totalsBox: {
+    width: '16rem',
+    marginLeft: 'auto',
+  },
+  totalRow: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    fontSize: '0.875rem',
+    color: '#9ca3af',
+    marginBottom: '0.75rem',
+  },
+  totalRowFinal: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    fontSize: '1.25rem',
+    fontWeight: 'bold',
+    color: '#4f46e5',
+    paddingTop: '0.75rem',
+    borderTop: '2px solid #f3f4f6',
+  },
+  footer: {
+    position: 'absolute',
+    bottom: '3rem',
+    left: '3rem',
+    right: '3rem',
+    textAlign: 'center',
+    fontSize: '0.75rem',
+    color: '#9ca3af',
+  },
+  addItemForm: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.75rem',
+  },
+  formInput: {
+    padding: '0.5rem',
+    border: '1px solid #d1d5db',
+    borderRadius: '0.375rem',
+    fontSize: '0.875rem',
+  },
+};
