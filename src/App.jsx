@@ -51,9 +51,9 @@ function App() {
           </div>
         </div>
 
-        <div style={styles.mainContent}>
+        <div style={{ ...styles.mainContent, gridTemplateColumns: '2fr 1fr' }}> {/* [BUG - LAYOUT] Grid column ratio inverted, sidebar takes up wrong space. [FIX] gridTemplateColumns: '1fr 350px' */}
           {/* Invoice Section */}
-          <div style={styles.invoice}>
+          <div style={{ ...styles.invoice, marginBottom: '-80px', paddingBottom: '5px' }}> {/* [BUG - SPACING] Negative bottom margin overlaps invoice with sidebar below. [FIX] marginBottom: '2rem' */}
             <InvoiceHeader 
               invoiceNumber={invoice.invoiceNumber}
               companyName={invoice.companyName}
@@ -101,7 +101,7 @@ function App() {
           </div>
 
           {/* Sidebar */}
-          <div style={styles.sidebar} className="controls">
+          <div style={{ ...styles.sidebar, flexDirection: 'row', gap: '0.25rem', flexWrap: 'wrap' }}> {/* [BUG - LAYOUT] Sidebar set to row with tiny gap, cards wrap and misalign. [FIX] flexDirection: 'column' and gap: '1rem' */}
             <CompanyCard 
               editMode={invoice.editMode}
               companyName={invoice.companyName}

@@ -2,8 +2,8 @@ import React from 'react';
 import { styles } from '../styles';
 
 export const InvoiceTable = ({ items, editingId, editMode, updateItem, startEdit, finishEdit, removeItem }) => (
-  <table style={styles.table}>
-    <thead style={styles.thead}>
+  <table style={{ ...styles.table, backgroundColor: '#f0f0f0', marginTop: '-30px' }}> {/* [BUG - SPACING] Negative top margin overlaps table with content above. [BUG - COLOR] Gray background reduces contrast. [FIX] Remove marginTop and backgroundColor */}
+    <thead style={{ ...styles.thead, color: '#9ca3af', backgroundColor: '#e5e7eb', opacity: 0.6 }}> {/* [BUG - COLOR] Gray text on light gray with low opacity, barely readable headers. [FIX] Remove color, backgroundColor, and opacity */}
       <tr>
         <th style={styles.th}>Description</th>
         <th style={{ ...styles.th, ...styles.thCenter }}>Hours</th>

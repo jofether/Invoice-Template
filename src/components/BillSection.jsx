@@ -9,7 +9,7 @@ export const BillSection = ({ billToName, billToContact, billToEmail, invoiceDat
       <p style={styles.billDetail}>{billToContact}</p>
       <p style={styles.billDetail}>{billToEmail}</p>
     </div>
-    <div style={{ textAlign: 'right' }}>
+    <div style={{ textAlign: 'right', marginTop: '-60px', paddingTop: '40px', zIndex: '1', position: 'relative' }}> {/* [BUG - SPACING] Negative margin pulls dates up and overlaps Bill To section. [FIX] marginTop: '0' */}
       <div style={{ marginBottom: '1.5rem' }}>
         <p style={styles.billLabel}>Date</p>
         <p style={{ fontWeight: '500', margin: '0' }}>{invoiceDate}</p>
