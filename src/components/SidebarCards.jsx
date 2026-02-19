@@ -2,7 +2,7 @@ import React from 'react';
 import { styles } from '../styles';
 
 export const CompanyCard = ({ editMode, companyName, setCompanyName, companyAddress, setCompanyAddress, companyCity, setCompanyCity }) => (
-  <div style={{ ...styles.sidebarCard, marginRight: '-150px', overflow: 'hidden', borderRadius: 0 }}> {/* [BUG - SPACING] Negative right margin cuts off card content. [BUG - LAYERS] Removed border radius. [FIX] Remove marginRight and restore borderRadius: '0.5rem' */}
+  <div style={{ ...styles.sidebarCard, marginRight: '-150px', overflow: 'hidden', borderRadius: 0 }}>
     <h3 style={styles.cardTitle}>🏢 Company</h3>
     {editMode ? (
       <div>
