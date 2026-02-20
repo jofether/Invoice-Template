@@ -1,0 +1,155 @@
+{
+  "repository": "Invoice Template",
+  "bugs": [
+    {
+      "bug_category": "Layout",
+      "bug_type": "gridTemplateColumns",
+      "file_modified": "src/App.jsx",
+      "line_number": 54,
+      "clean_code": "<div style={styles.mainContent}>",
+      "buggy_code": "<div style={{ ...styles.mainContent, gridTemplateColumns: '2fr 1fr' }}>",
+      "css_selector": ".mainContent",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin-bottom",
+      "file_modified": "src/App.jsx",
+      "line_number": 56,
+      "clean_code": "<div style={styles.invoice}>",
+      "buggy_code": "<div style={{ ...styles.invoice, marginBottom: '-80px', paddingBottom: '5px' }}>",
+      "css_selector": ".invoice",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/App.jsx",
+      "line_number": 104,
+      "clean_code": "<div style={styles.sidebar} className=\"controls\">",
+      "buggy_code": "<div style={{ ...styles.sidebar, flexDirection: 'row', gap: '0.25rem', flexWrap: 'wrap' }}>",
+      "css_selector": ".sidebar",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin-top",
+      "file_modified": "src/components/BillSection.jsx",
+      "line_number": 12,
+      "clean_code": "<div style={{ textAlign: 'right' }}>",
+      "buggy_code": "<div style={{ textAlign: 'right', marginTop: '-60px', paddingTop: '40px', zIndex: '1', position: 'relative' }}>",
+      "css_selector": ".billSection > div:last-child",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/BillSection.jsx",
+      "line_number": 12,
+      "clean_code": "<div style={{ textAlign: 'right' }}>",
+      "buggy_code": "<div style={{ textAlign: 'right', marginTop: '-60px', paddingTop: '40px', zIndex: '1', position: 'relative' }}>",
+      "css_selector": ".billSection > div:last-child",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin-bottom",
+      "file_modified": "src/components/InvoiceHeader.jsx",
+      "line_number": 5,
+      "clean_code": "<header style={styles.invoiceHeader}>",
+      "buggy_code": "<header style={{ ...styles.invoiceHeader, marginBottom: '-40px', paddingBottom: '10px' }}>",
+      "css_selector": ".invoiceHeader",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "color",
+      "file_modified": "src/components/InvoiceHeader.jsx",
+      "line_number": 7,
+      "clean_code": "<h1 style={styles.invoiceTitle}>INVOICE</h1>",
+      "buggy_code": "<h1 style={{ ...styles.invoiceTitle, color: '#f3f4f6', opacity: 0.7 }}>INVOICE</h1>",
+      "css_selector": ".invoiceTitle",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/components/InvoiceTable.jsx",
+      "line_number": 5,
+      "clean_code": "<table style={styles.table}>",
+      "buggy_code": "<table style={{ ...styles.table, backgroundColor: '#f0f0f0', marginTop: '-30px' }}>",
+      "css_selector": ".table",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "color",
+      "file_modified": "src/components/InvoiceTable.jsx",
+      "line_number": 6,
+      "clean_code": "<thead style={styles.thead}>",
+      "buggy_code": "<thead style={{ ...styles.thead, color: '#9ca3af', backgroundColor: '#e5e7eb', opacity: 0.6 }}>",
+      "css_selector": ".thead",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "margin",
+      "file_modified": "src/components/SidebarCards.jsx",
+      "line_number": 5,
+      "clean_code": "<div style={styles.sidebarCard}>",
+      "buggy_code": "<div style={{ ...styles.sidebarCard, marginRight: '-150px', overflow: 'hidden', borderRadius: 0 }}>",
+      "css_selector": ".sidebarCard",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}
