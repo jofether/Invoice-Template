@@ -9,7 +9,7 @@
       "line_number": 54,
       "clean_code": "<div style={styles.mainContent}>",
       "buggy_code": "<div style={{ ...styles.mainContent, gridTemplateColumns: '2fr 1fr' }}>",
-      "css_selector": ".mainContent",
+      "css_selector": "div:has(> div:has(header:has(h1:has-text(\"INVOICE\"))))",
       "bounding_box": {
         "x": 200,
         "y": 100,
@@ -25,9 +25,9 @@
       "line_number": 56,
       "clean_code": "<div style={styles.invoice}>",
       "buggy_code": "<div style={{ ...styles.invoice, marginBottom: '-80px', paddingBottom: '5px' }}>",
-      "css_selector": ".invoice",
+      "css_selector": "div:has(h1:has-text(\"INVOICE\"))",
       "bounding_box": {
-        "x": 40,
+        "x": 240,
         "y": 115,
         "width": 779,
         "height": 535
@@ -41,12 +41,12 @@
       "line_number": 104,
       "clean_code": "<div style={styles.sidebar} className=\"controls\">",
       "buggy_code": "<div style={{ ...styles.sidebar, flexDirection: 'row', gap: '0.25rem', flexWrap: 'wrap' }}>",
-      "css_selector": ".sidebar",
+      "css_selector": "div.controls",
       "bounding_box": {
-        "x": 40,
+        "x": 850,
         "y": 40,
-        "width": 1200,
-        "height": 43
+        "width": 350,
+        "height": 150
       }
     },
     {
@@ -57,12 +57,12 @@
       "line_number": 12,
       "clean_code": "<div style={{ textAlign: 'right' }}>",
       "buggy_code": "<div style={{ textAlign: 'right', marginTop: '-60px', paddingTop: '40px', zIndex: '1', position: 'relative' }}>",
-      "css_selector": ".billSection > div:last-child",
+      "css_selector": "div:has(p:has-text(\"Bill To\")) + div",
       "bounding_box": {
-        "x": 675,
-        "y":  148,
-        "width": 95,
-        "height": 144
+        "x": 240,
+        "y": 130,
+        "width": 700,
+        "height": 300
       }
     },
     {
@@ -73,12 +73,12 @@
       "line_number": 12,
       "clean_code": "<div style={{ textAlign: 'right' }}>",
       "buggy_code": "<div style={{ textAlign: 'right', marginTop: '-60px', paddingTop: '40px', zIndex: '1', position: 'relative' }}>",
-      "css_selector": ".billSection > div:last-child",
+      "css_selector": "div:has(p:has-text(\"Bill To\")) + div",
       "bounding_box": {
-        "x": 675,
-        "y": 148,
-        "width": 95,
-        "height": 144
+        "x": 240,
+        "y": 130,
+        "width": 700,
+        "height": 300
       }
     },
     {
@@ -89,10 +89,10 @@
       "line_number": 5,
       "clean_code": "<header style={styles.invoiceHeader}>",
       "buggy_code": "<header style={{ ...styles.invoiceHeader, marginBottom: '-40px', paddingBottom: '10px' }}>",
-      "css_selector": ".invoiceHeader",
+      "css_selector": "header:has(h1:has-text(\"INVOICE\"))",
       "bounding_box": {
-        "x": 88,
-        "y": 163,
+        "x": 280,
+        "y": 130,
         "width": 683,
         "height": 85
       }
@@ -105,12 +105,12 @@
       "line_number": 7,
       "clean_code": "<h1 style={styles.invoiceTitle}>INVOICE</h1>",
       "buggy_code": "<h1 style={{ ...styles.invoiceTitle, color: '#f3f4f6', opacity: 0.7 }}>INVOICE</h1>",
-      "css_selector": ".invoiceTitle",
+      "css_selector": "h1:has-text(\"INVOICE\")",
       "bounding_box": {
-        "x": 88,
-        "y": 163,
-        "width": 164,
-        "height": 51
+        "x": 240,
+        "y": 115,
+        "width": 779,
+        "height": 100
       }
     },
     {
@@ -121,12 +121,12 @@
       "line_number": 5,
       "clean_code": "<table style={styles.table}>",
       "buggy_code": "<table style={{ ...styles.table, backgroundColor: '#f0f0f0', marginTop: '-30px' }}>",
-      "css_selector": ".table",
+      "css_selector": "table:has(th:has-text(\"Description\"))",
       "bounding_box": {
-        "x": 88,
-        "y": 310,
-        "width": 683,
-        "height": 193
+        "x": 240,
+        "y": 300,
+        "width": 779,
+        "height": 400
       }
     },
     {
@@ -137,10 +137,10 @@
       "line_number": 6,
       "clean_code": "<thead style={styles.thead}>",
       "buggy_code": "<thead style={{ ...styles.thead, color: '#9ca3af', backgroundColor: '#e5e7eb', opacity: 0.6 }}>",
-      "css_selector": ".thead",
+      "css_selector": "table:has(th:has-text(\"Description\")) thead",
       "bounding_box": {
-        "x": 88,
-        "y": 311,
+        "x": 280,
+        "y": 420,
         "width": 683,
         "height": 38
       }
@@ -153,11 +153,11 @@
       "line_number": 5,
       "clean_code": "<div style={styles.sidebarCard}>",
       "buggy_code": "<div style={{ ...styles.sidebarCard, marginRight: '-150px', overflow: 'hidden', borderRadius: 0 }}>",
-      "css_selector": ".sidebarCard",
+      "css_selector": "div:has(h3:has-text(\"🏢 Company\"))",
       "bounding_box": {
-        "x": 851,
+        "x": 750,
         "y": 115,
-        "width": 198,
+        "width": 530,
         "height": 195
       }
     }
